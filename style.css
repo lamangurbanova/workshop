@@ -1,0 +1,2707 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+    /* font-family: 'DM Sans', sans-serif; */
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125px;
+    background-color: rgb(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 746px;
+    height: 68px;
+    gap: 33px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+}
+
+ul>li>a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    line-height: 196.19%;
+    color: white;
+    font-weight: 400;
+}
+
+header i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+header i:hover {
+    color: #E0AB81;
+}
+
+nav {
+    display: none;
+}
+
+.black {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    top: 0;
+    /* position: absolute; */
+    z-index: 222;
+    display: none;
+}
+
+.hidden-menu {
+    position: fixed;
+    top: 0;
+    background-color: #000000;
+    width: 250px;
+    height: 100vh;
+    z-index: 10000;
+    display: none;
+}
+
+.close {
+    position: absolute;
+    right: 13px;
+    top: 14px;
+}
+
+.close i {
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.close i:hover {
+    color: #E0AB81;
+}
+
+.hidden ul {
+    margin-top: 57px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.hidden ul li a {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 22px;
+    line-height: 196.19%;
+    color: white;
+    font-weight: 400;
+}
+
+
+.section-1 {
+    width: 100%;
+    height: 920px;
+    background: no-repeat url(./assets/Rectangle.png);
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 87px;
+
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 902px;
+    height: 212px;
+    color: white;
+}
+
+.first-text {
+    padding: 10px;
+    width: 902px;
+    height: 150px;
+}
+
+.first-text h2 {
+    width: 882px;
+    height: 130px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 135.69%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.second-text {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+
+    width: 725px;
+    height: 62px;
+}
+
+.second-text p {
+    width: 705px;
+    height: 42px;
+
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    /* identical to box height */
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.find-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 0px;
+    gap: 10px;
+    width: 169px;
+    height: 53px;
+    background: #E8BE7F;
+    border: none;
+}
+
+.find-btn a {
+    width: 169px;
+    height: 33px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 192.69%;
+    /* or 29px */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.21em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: #000000;
+}
+
+.section-2 {
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    background-color: #0f0e0e;
+    color: white;
+    padding: 20px;
+}
+
+.img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 226px;
+}
+
+.img img {
+    width: 100%;
+}
+
+.about {
+    margin: 100px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.about-img {
+    width: 682px;
+    height: 792px;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-text {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 69px;
+    width: 589px;
+    height: 624px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.first h5 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 192.69%;
+    /* identical to box height, or 54px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.21em;
+
+    color: #E8BE7F;
+
+}
+
+.first h2 {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 192.69%;
+
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.ourStory p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 166.5%;
+    /* or 47px */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.section-3 {
+    width: 100%;
+    height: 696px;
+    background-color: #0f0e0e;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+}
+
+.blog-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.blog-text h5 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 192.69%;
+    /* identical to box height, or 54px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.21em;
+
+    color: #E8BE7F;
+}
+
+.blog-text h2 {
+    font-family: 'Forum', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 192.69%;
+    /* or 92px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.blog-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    gap: 23px;
+    /* height: 504px; */
+    width: 100%;
+}
+
+.item {
+    /* width: 453px; */
+    height: 504px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.item>.text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 280px;
+    left: 10px;
+    /*  top: 15px; */
+}
+
+.date {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    gap: 10px;
+}
+
+.date p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135.69%;
+    /* or 27px */
+
+    display: flex;
+    align-items: center;
+
+    color: #E8BE7F;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.name h5 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 135.69%;
+    /* identical to box height, or 33px */
+
+    display: flex;
+    align-items: center;
+
+    color: #E8BE7F;
+}
+
+.name p {
+    font-family: 'Futura Bk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135.69%;
+    /* or 38px */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+
+}
+
+.section-4 {
+    height: 1110px;
+    background-color: #0f0e0e;
+    position: relative;
+}
+
+.back-img-1 {
+    width: 822px;
+    /* height: 100%; */
+}
+
+.back-img-1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.back-img-2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.ourMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    margin: 0 auto;
+    position: absolute;
+    top: 100px;
+    /*  width: 1209px; */
+}
+
+.menu-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-text h5 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 192.69%;
+
+    /* display: flex;
+    align-items: center; */
+    letter-spacing: 0.21em;
+
+    color: #E8BE7F;
+}
+
+.menu-text h2 {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 192.69%;
+    /* or 92px */
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.foods {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.meal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #565555;
+    border-left: none;
+    border-right: none;
+    height: 105px;
+}
+
+.meal a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135.69%;
+    text-transform: uppercase;
+    font-family: 'DM Sans';
+
+    color: white;
+}
+
+.meal-about {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+.food {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    gap: 19px;
+}
+
+.food-about {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.food-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 31px;
+}
+
+.food-name h5 {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+}
+
+.food-name span {
+    font-family: 'Lora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+
+    color: #E0AB81;
+}
+
+.food-name>p {
+    width: 192px;
+    height: 0px;
+    border: 1px solid #565555;
+}
+
+.food-description {
+    width: 402px;
+}
+
+.food-description p {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+
+    color: #FFFFFF;
+}
+
+.dinner_time {
+    display: flex;
+    justify-content: center;
+}
+
+.dinner_time P {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+
+    color: #FFFFFF;
+
+}
+
+.dinner_time span {
+    color: #E8BE7F;
+}
+
+.section-5 {
+    height: 1209px;
+    background-color: #0f0e0e;
+    padding-top: 60px;
+}
+
+.section-5 .img {
+    position: absolute;
+    top: 3559px;
+    left: 0;
+    height: 418px;
+    width: 200px;
+
+}
+
+.section-5 .img img {
+    height: 100%;
+    width: 100%;
+}
+
+.conatiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.text h5 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 192.69%;
+    letter-spacing: 0.21em;
+    color: #E8BE7F;
+}
+
+.text h2 {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 192.69%;
+    color: #FFFFFF;
+}
+
+.special-food {
+    display: flex;
+    gap: 44px;
+}
+
+.special-food .food-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.special-food .food-img {
+    width: 433px;
+    height: 484px;
+}
+
+.special-food .food-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.special-food .food-description {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.special-food .food-description h5 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 135.69%;
+    color: #E8BE7F;
+}
+
+.special-food .food-description p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 135.69%;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.special-food .food-2 {
+    margin-top: 90px;
+}
+
+.section-6 .back-img {
+    width: 100%;
+    height: 713px;
+    position: relative;
+}
+
+.section-6 {
+    position: relative;
+    background-color: #0f0e0e;
+    height: 1825px;
+
+}
+
+.section-6 .back-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.section-6 .text {
+    position: relative;
+    width: 343px;
+    height: 101px;
+    margin: -500px auto;
+    z-index: 10000;
+    width: 1155px;
+    height: 171px;
+
+}
+
+.section-6 .text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 55px;
+    /* line-height: 57px; */
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reservation {
+    position: relative;
+    background: #0F1011;
+    border: 1.26675px solid #E0AB81;
+    width: 1005.34px;
+    height: 933px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 660px auto;
+
+}
+
+.reservation .immg {
+    position: absolute;
+    width: 495px;
+    /* height: 232px; */
+    transform: translate(50%, 0);
+    right: 50%;
+    top: 931px;
+
+
+}
+
+.reservation>div h2 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 68.4045px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 66px;
+}
+
+.reservation .immg img {
+    width: 100%;
+    height: 100%;
+}
+
+form {
+    width: 931px;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.textInput {
+    display: flex;
+    justify-content: space-around;
+}
+
+input[type="text"] {
+    border: 1.26675px solid #E0AB81;
+    width: 415.49px;
+    height: 72.2px;
+    background: #1A1B1C;
+    outline: none;
+    color: #E0AB81;
+    font-size: 20px;
+    /* text-align: center; */
+    padding: 18px 38px;
+}
+
+::placeholder {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.8015px;
+    line-height: 166.5%;
+    /* text-align: center; */
+    color: #ffffff;
+
+}
+
+.dateTime {
+    display: flex;
+    justify-content: space-around;
+}
+
+.person {
+    width: 272.35px;
+    height: 73.47px;
+    background: #1A1B1C;
+    border: 1.26675px solid #E0AB81;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.person i {
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+.person p,
+.time p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.8015px;
+    line-height: 166.5%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.dateTime .date {
+    width: 272.35px;
+    height: 73.47px;
+    background: #1A1B1C;
+    border: 1.26675px solid hsl(27, 61%, 69%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dateTime .date input {
+    background: #1A1B1C;
+    border: none;
+    color: #FFFFFF;
+    outline: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22.8015px;
+}
+
+.dateTime .date i {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.time {
+    width: 272.35px;
+    height: 73.47px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #1A1B1C;
+    border: 1.26675px solid #E0AB81;
+}
+
+.time i {
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.message {
+    display: flex;
+    justify-content: space-around;
+}
+
+textarea {
+    width: 900px;
+    height: 260.42px;
+    background: #1A1B1C;
+    border: 1.26675px solid #E0AB81;
+    color: #E0AB81;
+    padding: 15px 38px;
+    font-size: 24px;
+    outline: none;
+}
+
+.book {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 900px;
+    height: 74.74px;
+    background: #E0AB81;
+    outline: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 19.0013px;
+    line-height: 192.69%;
+    border: none;
+    cursor: pointer;
+}
+
+.thank {
+    width: 925.99px;
+    height: 258.42px;
+    background: #1A1B1C;
+    border: 1.26675px solid #E0AB81;
+    transform: translate(0, 50%);
+    right: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none !important; */
+}
+
+.thank p {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 47.0457px;
+    line-height: 166.5%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.section-7 {
+    position: relative;
+    background-color: #0f0e0e;
+    height: 872px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.baack-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.section-7 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section-7 .container .text {
+    width: 368px;
+    height: 356px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.chef {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cheff-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 399.78px;
+    height: 628px;
+    gap: 13px;
+}
+
+.cheff-img {
+    width: 399.78px;
+    height: 493px;
+}
+
+.cheff-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.cheff-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cheff-description h2 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.cheff-description h5 {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #E0AB81;
+    text-transform: uppercase;
+}
+
+footer {
+    height: 502px;
+    background-color: #0f0e0e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+footer .container {
+    width: 1213px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.img-back {
+    position: absolute;
+    bottom: 0;
+
+}
+
+footer .logo {
+    width: 170px;
+}
+
+footer .logo img {
+    width: 100%;
+}
+
+footer .container .nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+footer .container .nav ul a {
+    font-size: 33px;
+}
+
+.address {
+    /* width: 226px; */
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.address .phone {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.address span {
+    display: block;
+    color: #E0AB81;
+}
+
+.location,
+.lunchTime,
+.dinnerTime {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #A7A7A7;
+}
+
+.sosial-media ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.sosial-media a {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.sosial-media a:hover {
+    color: #E0AB81;
+}
+
+@media only screen and (max-width:576px) {
+    header {
+        height: 75px;
+    }
+
+    .section-1 {
+        background-color: #0f0e0e;
+        padding: 20px;
+        height: 340px;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slogan {
+        width: 400px;
+        height: 112px;
+    }
+
+    .first-text {
+        width: 388px;
+        height: 68px;
+    }
+
+    .first-text h2 {
+        font-size: 27px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .second-text {
+
+        width: 388px;
+        height: 38px;
+    }
+
+    .second-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .find-btn {
+        left: auto;
+        top: 230px;
+        height: 50px;
+    }
+
+    .section-2 {
+        height: 1163px;
+    }
+
+    .section-2 .img {
+        top: 0px;
+        width: 106px;
+    }
+
+    .about {
+        margin-top: 46px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .about-text {
+        width: 100%;
+        height: 390px;
+        gap: 20px;
+    }
+
+    .ourStory p {
+        font-size: 20px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .section-3 {
+        height: 1700px;
+    }
+
+    .blog-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        width: 390px;
+
+    }
+
+    .blog-img {
+        width: 100%;
+    }
+
+    .blog-img img {
+        width: 100%;
+    }
+
+    .name h5 {
+        font-size: 20px;
+    }
+
+    .name p {
+        font-size: 25px;
+    }
+
+    .item>.text {
+        gap: 248px;
+    }
+
+    .section-4 {
+        height: 3300px;
+    }
+
+    .back-img-1 {
+        width: 100%;
+    }
+
+    .meal {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: none;
+
+    }
+
+    .foods {
+        gap: 45px;
+    }
+
+    .dinner_time p {
+        text-align: center;
+        width: 250px;
+    }
+
+    .meal a {
+        font-size: 20px;
+    }
+
+    .ourMenu {
+        gap: 30px;
+    }
+
+    .meal-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 43px;
+    }
+
+    .food {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-img {
+        width: 340px;
+    }
+
+    .food-img img {
+        width: 100%;
+    }
+
+    .section-5 {
+        height: 2400px;
+        position: relative;
+    }
+
+    .section-5 .img {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        height: 319px;
+        width: 135px;
+    }
+
+    .special-food {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .special-food .food-2 {
+        margin-top: 10px;
+    }
+
+    .special-food>div {
+        width: 370px;
+    }
+
+    .special-food .food-img {
+        width: 100%;
+    }
+
+    .section-6 {
+        height: 1400px;
+    }
+
+    .section-6 .back-img {
+        width: 100%;
+        height: 333px;
+    }
+
+    .section-6 .text {
+        position: relative;
+        width: 343px;
+        height: 101px;
+        margin: -200px auto;
+        z-index: 10000;
+
+    }
+
+    .section-6 .text p {
+        font-size: 24px;
+    }
+
+    .reservation {
+        width: 100%;
+        height: 933px;
+        margin: 260px auto;
+    }
+
+    .reservation>div h2 {
+        font-size: 34px;
+    }
+
+    .reservation .immg {
+        width: 300px;
+        /* height: 100px; */
+    }
+
+    form {
+        width: 351px;
+        height: 750px;
+        gap: 20px;
+    }
+
+    .textInput {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .dateTime {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dateTime>div {
+        width: 100%;
+    }
+
+    .dateTime .date {
+        width: 100%;
+    }
+
+    textarea {
+        height: 170px;
+    }
+
+    .section-7 {
+        height: 2240px;
+    }
+
+    .chef {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer {
+        height: 1100px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .thank {
+        width: 385.99px;
+
+    }
+    
+    .thank p {
+        font-size: 30.0457px;
+        
+    }
+
+
+}
+
+@media only screen and (min-width:576px) {
+    header {
+        height: 75px;
+    }
+
+    .section-1 {
+        background-color: #0f0e0e;
+        padding: 20px;
+        height: 340px;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slogan {
+        width: 400px;
+        height: 112px;
+    }
+
+    .first-text {
+        width: 388px;
+        height: 68px;
+    }
+
+    .first-text h2 {
+        font-size: 27px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .second-text {
+
+        width: 388px;
+        height: 38px;
+    }
+
+    .second-text p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .find-btn {
+        left: auto;
+        top: 230px;
+        height: 50px;
+    }
+
+    .section-2 {
+        height: 1163px;
+    }
+
+    .section-2 .img {
+        top: 0px;
+        width: 106px;
+    }
+
+    .about {
+        margin-top: 46px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .about-text {
+        width: 100%;
+        height: 390px;
+        gap: 20px;
+    }
+
+    .ourStory p {
+        font-size: 20px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .section-3 {
+        height: 1700px;
+    }
+
+    .blog-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item {
+        width: 390px;
+
+    }
+
+    .blog-img {
+        width: 100%;
+    }
+
+    .blog-img img {
+        width: 100%;
+    }
+
+    .name h5 {
+        font-size: 20px;
+    }
+
+    .name p {
+        font-size: 25px;
+    }
+
+    .item>.text {
+        gap: 248px;
+    }
+
+    .section-4 {
+        height: 3300px;
+    }
+
+    .back-img-1 {
+        width: 100%;
+    }
+
+    .meal {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: none;
+
+    }
+
+    .foods {
+        gap: 45px;
+    }
+
+    .dinner_time p {
+        text-align: center;
+        width: 250px;
+    }
+
+    .meal a {
+        font-size: 20px;
+    }
+
+    .ourMenu {
+        gap: 30px;
+    }
+
+    .meal-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 43px;
+    }
+
+    .food {
+        width: 340px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-img {
+        width: 340px;
+    }
+
+    .food-img img {
+        width: 100%;
+    }
+
+    .section-5 {
+        height: 2400px;
+        position: relative;
+    }
+
+    .section-5 .img {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        height: 319px;
+        width: 135px;
+    }
+
+    .special-food {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .special-food .food-2 {
+        margin-top: 10px;
+    }
+
+    .special-food>div {
+        width: 370px;
+    }
+
+    .special-food .food-img {
+        width: 100%;
+    }
+
+    .section-6 {
+        height: 1400px;
+    }
+
+    .section-6 .back-img {
+        width: 100%;
+        height: 333px;
+    }
+
+    .section-6 .text {
+        position: relative;
+        width: 343px;
+        height: 101px;
+        margin: -200px auto;
+        z-index: 10000;
+
+    }
+
+    .section-6 .text p {
+        font-size: 24px;
+    }
+
+    .reservation {
+        width: 100%;
+        height: 933px;
+        margin: 260px auto;
+    }
+
+    .reservation>div h2 {
+        font-size: 34px;
+    }
+
+    .reservation .immg {
+        width: 300px;
+        /* height: 100px; */
+    }
+
+    form {
+        width: 351px;
+        height: 750px;
+        gap: 20px;
+    }
+
+    .textInput {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .dateTime {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dateTime>div {
+        width: 100%;
+    }
+
+    .dateTime .date {
+        width: 100%;
+    }
+
+    textarea {
+        height: 170px;
+    }
+
+    .section-7 {
+        height: 2240px;
+    }
+
+    .chef {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer {
+        height: 1100px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+    .thank {
+        width: 485.99px;
+
+    }
+    
+    .thank p {
+        font-size: 33.0457px;
+        
+    }
+
+
+}
+
+@media only screen and (min-width:768px) {
+    nav {
+        display: block;
+    }
+    header i{
+        display: none !important;
+    }
+    header {
+        height: 85px;
+    }
+
+    .section-1 {
+        background-color: #0f0e0e;
+        padding: 20px;
+        height: 440px;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .slogan {
+        width: 500px;
+        height: 182px;
+        gap: 12px;
+    }
+
+    .first-text {
+        width: 488px;
+        height: 68px;
+    }
+
+    .first-text h2 {
+        font-size: 37px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .second-text {
+        width: 388px;
+        height: 38px;
+    }
+
+    .second-text p {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    .find-btn {
+        left: auto;
+        top: 30px;
+        height: 50px;
+    }
+
+    .section-2 {
+        height: 1163px;
+    }
+
+    .section-2 .img {
+        top: 0px;
+        width: 106px;
+    }
+
+    .about {
+        margin-top: 46px;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+        width: 640px;
+    }
+
+    .about-text {
+        width: 100%;
+        height: 390px;
+        gap: 20px;
+    }
+
+    .ourStory p {
+        font-size: 20px;
+    }
+
+    .about-img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .section-3 {
+        height: 1800px;
+    }
+
+    .blog-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .item {
+        width: 590px;
+
+    }
+
+    .blog-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .blog-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .name h5 {
+        font-size: 24px;
+    }
+
+    .name p {
+        font-size: 28px;
+    }
+
+    .item>.text {
+        gap: 308px;
+    }
+
+    .section-4 {
+        height: 4400px;
+    }
+
+    .back-img-1 {
+        width: 100%;
+    }
+
+    .meal {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: none;
+
+    }
+
+    .foods {
+        gap: 45px;
+    }
+
+    .dinner_time p {
+        text-align: center;
+        width: 250px;
+    }
+
+    .meal a {
+        font-size: 20px;
+    }
+
+    .ourMenu {
+        gap: 30px;
+    }
+
+    .meal-about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 43px;
+    }
+
+    .food {
+        width: 540px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .food-img {
+        width: 540px;
+    }
+
+    .food-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .food-description {
+        width: 100%;
+    }
+
+    .section-5 {
+        height: 2200px;
+        position: relative;
+    }
+
+    .section-5 .img {
+        position: absolute;
+        top: -100px;
+        left: 0;
+        height: 319px;
+        width: 135px;
+    }
+
+    .special-food {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .special-food .food-2 {
+        margin-top: 10px;
+    }
+
+    .special-food>div {
+        width: 570px;
+    }
+
+    .special-food .food-img {
+        width: 100%;
+    }
+
+    .section-6 {
+        height: 1400px;
+    }
+
+    .section-6 .back-img {
+        width: 100%;
+        height: 433px;
+    }
+
+    .section-6 .text {
+        position: relative;
+        width: 543px;
+        height: 101px;
+        margin: -240px auto;
+        z-index: 10000;
+
+    }
+
+    .section-6 .text p {
+        font-size: 27px;
+    }
+
+    .reservation {
+        width: 590px;
+        height: 933px;
+        margin: 260px auto;
+    }
+
+    .reservation>div h2 {
+        font-size: 34px;
+    }
+
+    .reservation .immg {
+        width: 300px;
+        /* height: 100px; */
+    }
+
+    form {
+        width: 351px;
+        height: 750px;
+        gap: 20px;
+    }
+
+    .textInput {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    .dateTime {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .dateTime>div {
+        width: 100%;
+    }
+
+    .dateTime .date {
+        width: 100%;
+    }
+
+    textarea {
+        height: 170px;
+    }
+
+    .section-7 {
+        height: 2240px;
+    }
+
+    .chef {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .cheff-about {
+        width: 500px;
+    }
+
+    .cheff-img {
+        width: 100%;
+    }
+
+    footer {
+        height: 1200px;
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    footer .container .nav ul a {
+        font-size: 43px;
+    }
+
+    .address .phone {
+        font-size: 30px;
+    }
+
+    .location,
+    .lunchTime,
+    .dinnerTime {
+        font-size: 19px;
+    }
+
+    
+    .thank {
+        width: 485.99px;
+
+    }
+    
+    .thank p {
+        font-size: 37.0457px;
+        
+    }
+
+}
+
+@media only screen and (min-width:992px){
+   
+    
+    header {
+        height: 95px;
+    }
+    .slogan {
+        width: 700px;
+        height: 182px;
+        gap: 12px;
+    }
+    .first-text {
+        width: 688px;
+        height: 68px;
+    }
+    .first-text h2 {
+        font-size: 40px;
+        width: 100%;
+        height: 70px;
+    }
+
+    .second-text {
+        width: 488px;
+        height: 38px;
+    }
+    .section-2 {
+        height: 763px;
+    }
+    .about{
+        display: flex;
+        flex-direction: row;
+        width: 940px;
+    }
+    .ourStory p {
+        font-size: 26px;
+    }
+    .section-3 {
+        height: 700px;
+    }
+    .blog-item{
+        display: flex;
+        flex-direction: row;
+
+    }
+    
+    .item .text{
+        width: 96%;
+    }
+
+    .item .text .name{
+        width: 100%;
+    }
+    .item>.text {
+        gap: 250px;
+    }
+    .section-4 {
+        height: 1310px;
+    }
+    .foods{
+        width: 900px;
+    }
+    .meal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        border: 1px solid #565555;
+        border-left: none;
+        border-right: none;
+        height: 105px;
+    }
+    .meal-about{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+    }
+
+    .food{
+        width: 400px;
+    }
+    .food-img{
+        width: 100px;
+    }
+
+    .section-5{
+        height: 900px;
+    }
+
+    .special-food{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .special-food>div {
+        width: 300px;
+    }
+
+    .special-food .food-img {
+        width: 320px;
+        /* height: 384px; */
+    }
+    .special-food .food-1 {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 0;
+    }
+    .special-food .food-2{
+        margin-top: 30px;
+    }
+
+    .section-6 {
+        position: relative;
+        background-color: #0f0e0e;
+        height: 1425px;
+    
+    }
+    .section-6 .text {
+        position: relative;
+        width: 343px;
+        height: 101px;
+        margin: -300px auto;
+        z-index: 10000;
+        width: 900px;
+        height: 171px;
+    
+    }
+    .section-6 .text p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 55px;
+        /* line-height: 57px; */
+        text-align: center;
+        color: #FFFFFF;
+    }
+    .section-6 .back-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .reservation {
+        position: relative;
+        background: #0F1011;
+        border: 1.26675px solid #E0AB81;
+        width: 900.34px;
+        height: 933px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        margin: 360px auto;
+    
+    }
+    .reservation>div h2 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 68.4045px;
+        line-height: 76px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 66px;
+    }
+
+    form {
+        width: 860px;
+        height: 750px;
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+    }
+    .textInput {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    input[type="text"] {
+        border: 1.26675px solid #E0AB81;
+        width: 415.49px;
+        height: 72.2px;
+        background: #1A1B1C;
+        outline: none;
+        color: #E0AB81;
+        font-size: 20px;
+        /* text-align: center; */
+        padding: 18px 38px;
+    }
+    .dateTime {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    textarea{
+        height: 300px;
+    }
+    .section-7 {
+        height: 842px;
+
+    }
+    .chef {
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        width: 100%;
+    }
+    .cheff-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 299.78px;
+        height: 428px;
+        gap: 13px;
+    }
+    footer {
+        height: 502px;
+        background-color: #0f0e0e;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    
+    footer .container {
+        width: 900px;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .img-back {
+        position: absolute;
+        bottom: 0;
+    
+    }
+    
+    footer .logo {
+        width: 170px;
+    }
+    
+    footer .logo img {
+        width: 100%;
+    }
+    
+    footer .container .nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
+    
+    footer .container .nav ul a {
+        font-size: 33px;
+    }
+    
+    .address {
+        /* width: 226px; */
+        height: 324px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .address .phone {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+    }
+    
+    .address span {
+        display: block;
+        color: #E0AB81;
+    }
+    
+    .location,
+    .lunchTime,
+    .dinnerTime {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #A7A7A7;
+    }
+    
+    .sosial-media ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sosial-media a {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 29px;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+    
+    .sosial-media a:hover {
+        color: #E0AB81;
+    }
+
+    .thank {
+        width: 800.99px;
+
+    }
+    
+    .thank p {
+        font-size: 45.0457px;
+        
+    }
+
+
+
+}
+
+@media only screen and (min-width:1200px){
+    header{
+        height: 125px;
+    }
+
+    .section-1 {
+        width: 100%;
+        height: 100vh;
+        background: no-repeat url(./assets/Rectangle.png);
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 87px;
+        background-color: #0f0e0e;
+    
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 902px;
+        height: 212px;
+        color: white;
+    }
+
+    .first-text {
+        padding: 10px;
+        width: 902px;
+        height: 150px;
+    }
+
+    .first-text h2 {
+        width: 882px;
+        height: 130px;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 135.69%;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .second-text {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px;
+        gap: 10px;
+    
+        width: 725px;
+        height: 62px;
+    }
+
+    .second-text p {
+        width: 705px;
+        height: 42px;
+    
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 42px;
+        /* identical to box height */
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .find-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px 0px;
+        gap: 10px;
+        width: 169px;
+        height: 53px;
+        background: #E8BE7F;
+        border: none;
+    }
+
+    .section-2 {
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        background-color: #0f0e0e;
+        color: white;
+        padding: 20px;
+    }
+
+    .about {
+        margin: 100px auto;
+        display: flex;
+        gap: 20px;
+        width: 1140px;
+    }
+    .about-img {
+        width: 882px;
+        height: 692px;
+    }
+    .about-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .ourStory p {
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 166.5%;
+        /* or 47px */
+    
+        text-align: center;
+    
+        color: #FFFFFF;
+    }
+
+    .section-4 {
+        height: 1010px;
+        background-color: #0f0e0e;
+        position: relative;
+    }
+
+    .meal-about{
+        width: 1140px;
+    }
+    .left, .right{
+        width: 500px;
+    }
+
+    .foods{
+        width: 1140px;
+    }
+    .food{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .food-img{
+        width: 200px;
+       /*  height: 200px; */
+    }
+
+    .special-food{
+        gap: 10px;
+    }
+
+    .special-food>div {
+        width: 380px;
+    }
+    .special-food .food-img {
+        width: 360px;
+        height: 384px;
+    }
+
+    .reservation{
+        width: 1140px;
+    }
+
+    .section-7{
+        width: 100%;
+    }
+    .chef{
+        width: 1140px;
+    }
+    .cheff-about{
+        width: 300px;
+    }
+    .cheff-img{
+        width: 350px;
+
+    }
+    .cheff-description{
+        width: 300px;
+    }
+    form{
+        width: 900px;
+    }
+    footer{
+     height: 600px;
+    }
+
+    footer .conatiner{
+        width: 1140px;
+    }
+    .cheff-about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 399.78px;
+        height: 428px;
+        gap: 13px;
+    }
+    .section-7{
+        height: 970px;
+    
+    }
+
+    .thank {
+        width: 985.99px;
+
+    }
+    
+    .thank p {
+        font-size: 47.0457px;
+        
+    }
+    
+    
+
+}
